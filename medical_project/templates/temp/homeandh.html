@@ -1,0 +1,361 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Styleofhome.css' %}">
+    <link rel="stylesheet" href="{% static 'medilab/css/font-awesome.min.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-space-between">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homeandh.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'temp:patient_profile' %}">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="notification.html">Notifications</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'temp:users' %}">sign up</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'temp:login_page' %}">sign in</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'admin:index' %}">admin</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       User</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'temp:sign_up_page' %}">sign up</a>
+                        <a class="dropdown-item" href="login_page.html">sign in</a>
+                        <a class="dropdown-item" href="login_page.html">sign out</a>
+
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="jumbotron" style="background-image: url(images/banner-bg.jpg);">
+
+        <div class="container">
+            <div class=""></div>
+            <h1 class="display-1" style="color: rgb(255, 255, 255);">Ethio health care search</h1>
+
+            <p class="leading" style="color: rgb(253, 253, 253);">Choose your ideal health care and book an appointment.</p>
+        </div>
+
+    </div>
+    <div class="from_to">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Health care" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <br>
+    <div class="most_search">
+        <h6>Most searched</h6>
+        <hr class="botm-line">
+
+    </div>
+    <div class="container-fluid container1">
+        <div class="row">
+            <div class="col-md-4 ">
+                <a href="medilab/index.html">
+                    <img src="{% static 'images/St.-Pauls-Hospital-Millennium-Medical-College.jpg' %}" class="img-fluid" alt="Responsive image">
+                </a>
+                <div class="content">
+                    <a href="medilab/index.html">
+                        <h5 class="color"> Kidus Paulos Hospital</h5>
+                    </a>
+                </div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <div class="col-md-4 ">
+                <a href="medilab/index.html">
+                    <img src="{% static 'images/tiruneshbj_.png' %}" class="img-fluid" alt="Responsive image">
+                </a>
+                <div class="content">
+                    <a href="medilab/index.html">
+                        <h5 class="color"> Tirunesh beijing hospital</h5>
+                    </a>
+                </div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container container2">
+        <h4>Looking for private health care centres?</h4>
+        <p class="lead">Choose your ideal health care and receive the tratment you need.</p>
+        <div class="container containeroflists">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="medilab/index.html">
+                        <img src="{% static 'images/St.-Pauls-Hospital-Millennium-Medical-College.jpg' %}" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <div class="content">
+                        <a href="medilab/index.html">
+                            <h5 class="color"> Kidus Paulos Hospital</h5>
+                        </a>
+                    </div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <div class="col-sm-4">
+                    <a href="medilab/index.html">
+                        <img src="{% static 'images/tikur1.jpg' %}" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <div class="content">
+                        <a href="medilab/index.html">
+                            <h5 class="color"> Tikur anbesa hospital</h5>
+                        </a>
+                    </div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <div class="col-sm-4">
+                    <a href="medilab/index.html">
+                        <img src="{% static 'images/tiruneshbj_.png' %}" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <div class="content">
+                        <a href="medilab/index.html">
+                            <h5 class="color"> Tirunesh beijing hospital</h5>
+                        </a>
+                    </div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container2">
+        <h4>Looking for public health care centres?</h4>
+        <p class="lead">Explore public health care centers and choose your ideal one.</p>
+        <div class="container containeroflists">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="medilab/index.html">
+                        <img src="{% static 'images/St.-Pauls-Hospital-Millennium-Medical-College.jpg' %}" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <div class="content">
+                        <a href="medilab/index.html">
+                            <h5 class="color"> Kidus Paulos Hospital</h5>
+                        </a>
+                    </div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <div class="col-sm-4">
+                    <a href="medilab/index.html">
+                        <img src="{% static 'images/tikur1.jpg' %}" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <div class="content">
+                        <a href="medilab/index.html">
+                            <h5 class="color"> Tikur anbesa hospital</h5>
+                        </a>
+                    </div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <div class="col-sm-4">
+                    <a href="medilab/index.html">
+                        <img src="{% static 'images/tiruneshbj_.png' %}" class="img-fluid" alt="Responsive image">
+                    </a>
+                    <div class="content">
+                        <a href="medilab/index.html">
+                            <h5 class="color"> Tirunesh beijing hospital</h5>
+                        </a>
+                    </div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text_section">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Ethio health care Search</h2>
+                <p class="lead"> Ethio health care search allows user to choose and book an appointment at health care centers in just a few clicks. You can find most of the health care centers in ethiopia on ethio health care search quickly and easily. </p>
+            </div>
+            <div class="col-sm-6">
+                <h2>Health care reveiws help you find your ideal health care</h2>
+                <p class="lead">Health care centers are rated by users and To get an extended overview of a health care centers, Ethio health care search shows the average rating and extensive reviews of health care centers from other sites,</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>How to book an appoinmetnt</h2>
+                <p class="lead"> Ethio health care search is a place to search for health care centers in Ethiopia. while users decide which health care best suits their needs, the booking process will be started through the booking site which is connected to our website.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer1" style="background-color: rgb(32, 46, 46);">
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark pt-4 footerclass">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto">
+
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">About us</h5>
+                        <p style="color: white;"> Ethio health care Search allows user to select their ideal Health care and book an appointment </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">Quick links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" style="color: white;">Help</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">About</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Terms and Conditions</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <hr>
+
+            <!-- Call to action -->
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                    <h5 class="mb-1" style="color: white;"> Register for free</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{% url 'temp:sign_up_page' %}" class="btn btn-danger btn-rounded">Sign up!</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
+
+            <hr>
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+
+                <li class="list-inline-item">
+
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li class="list-inline-item">
+
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>

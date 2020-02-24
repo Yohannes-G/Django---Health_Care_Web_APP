@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <title>sign_up</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form>
+
+            <div class="card bg-light">
+
+                <article class="card-body mx-auto" style="max-width: 400px;">
+                    <h4 class="card-title mt-3 text-center">Create Account</h4>
+                    <p class="text-center">Get started with your free account</p>
+
+
+                    <form enctype="multipart/form-data" method="POST">
+
+
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="Full name" type="text">
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="Email address" type="email">
+                        </div>
+
+
+                        <!-- form-group end.// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Create password" type="password">
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Repeat password" type="password">
+                        </div>
+                        <!-- form-group// -->
+                        <div class="container">
+                            <form>
+
+                                <a href="homeandh.html" class="btn btn-primary btn-rounded">Create_Account</a>
+                            </form>
+                        </div>
+                        <!-- form-group// -->
+                        <p class="text-center">Have an account? <a href="login_page.html">Log In</a> </p>
+                    </form>
+                </article>
+            </div>
+            <!-- card.// -->
+
+    </div>
+    <!--container end.//-->
+
+    <br><br>
+    <article class="bg-secondary mb-3">
+
+
+        <br><br>
+    </article>
+    <script src=" //maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <script src=" //cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+</body>
+
+</html>

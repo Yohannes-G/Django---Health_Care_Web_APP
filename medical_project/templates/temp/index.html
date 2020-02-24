@@ -1,0 +1,45 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html>
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <title>Hospital_app</title>
+    <!--<link rel="stylesheet" href="{% static " css/mystyle.css "%}"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <img src="{% static  'images/slider_2.jpg' %}">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Hello welcome to our hospital app!! </h1>
+
+        </div>
+    </div>
+    <div class="djangotwo">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>site name</th>
+                <th>Date accessed
+                    <th/>
+            </thead>
+
+            {% for acc in access_records %}
+            <tr>
+                <td>{{acc.name}}</td>
+                <td>{{acc.date}}</td>
+            </tr> {% endfor %}
+        </table>
+        {% else %}
+        <p>no access records found!!</p>
+        {% endif %}
+    </div>
+
+
+
+</body>
+
+</html>
